@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <title>Generator</title>
+    <link rel="stylesheet" type="text/css" href="css/generate.css" />
+</head>
+
+<body>
+    <section id="colors" class="main-body rows">
+        <h2 class="fill-container">Colors for headers</h2>
+        <div class="controls fill-container rows">
+            <input type="number" id="colorTemplateField" placeholder="Enter number of templates to generate">
+            <button type="submit" onclick="javascript:generateColorHandler()">Generate</button>
+        </div>
+        <div class="template">
+            <div class="head">Header of Webpage</div>
+            <div class="body">Body of Webage</div>
+            <h3 class="fill-container" style="text-align: center;">Sample Template</h3>
+        </div>
+    </section>
+
+    <section id="gradients" class="main-body rows">
+        <h2 class="fill-container">Gradients for background</h2>
+        <div class="controls fill-container rows">
+            <input type="number" id="gradientTemplateField" placeholder="Enter number of gradient templates to generate">
+            <button type="submit" onclick="javascript:generateGradientHandler()">Generate</button>
+        </div>
+        <div class="template" style="background-image: linear-gradient(287deg, #4ece81, #21cea4);">
+            <h3 class="fill-container" style="text-align: center;">Sample Template</h3>
+            <div class="input hang">#4ece81, #21cea4, angle = 287deg</div>
+        </div>
+    </section>
+
+    <section class="cols preview">
+        <div class="rows head">
+            <h2>Preview</h2>
+            <button class="close-preview">Close</button>
+        </div>
+
+        <div class="rows body fill-container"></div>
+    </section>
+    
+    <script src="js/generate.js"></script>
+</body>
+
+</html>

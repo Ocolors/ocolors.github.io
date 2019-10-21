@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+    background-color: #d4d0d0;
+	margin:0; padding: 0;
+	min-height: 500px;
+	max-height: 100vh !important;
+}
+
+.rows{
+    display:flex;
+    flex-direction: row;
+}
+
+.cols{
+    display:flex;
+    flex-direction: column;
+}
+
+.fill-container{
+    width: 100%;
+}
+
+.main-body{
+    flex-wrap: wrap;
+}
+
+.main-body h2{
+    /* margin-left: 2rem; */
+    margin-top: 0;
+    padding: 2rem;
+    background-color: rgb(107, 107, 107);
+}
+
+input[type="number"]{
+    font-size: 1.2rem;
+    width:60%;
+    margin: 0 2rem;
+    height:auto;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.template{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+    margin: 2rem;
+    width: 15rem;
+    min-height: 19rem;
+}
+
+.template > *{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.template .head{
+    height: 5rem;
+    background-color: #204c55;
+}
+
+.template .body{
+    height: 14rem;
+    background-color: #f2f2f4;
+}
+
+.template .input{
+    box-sizing: border-box;
+    border-radius: 0.2rem;
+    width: 90%;
+    background-color: #f2f2f4;
+    padding: 1rem 1.5rem;
+    margin: 2rem auto 1rem auto;
+}
+
+.hang{
+    margin-top: 100% !important;
+    /* margin-bottom: 0 !important; */
+}
+
+section.preview{
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: +999;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(58, 58, 58);
+}
+
+section.preview .head{
+    width: 97%;
+    padding: 1rem;
+    align-content: center;
+    justify-content: space-between;
+}
+
+section.preview .head > *{
+    color: white;
+    background-color: transparent;
+    height: auto;
+}
+
+section.preview .body{
+    height: 100%;
+}
+
+/* For mobile users */
+@media only screen and (max-width:1000px){
+
+}
