@@ -14,5 +14,5 @@ server.listen(PORT, "0.0.0.0", function() {
 
 // APPLICATION ROUTING
 app.get("/", function(req, res) {
-    res.sendFile(__dirname + "/public/generatePage.html");
+    res.sendFile(__dirname + "/public/index.html");
 });
